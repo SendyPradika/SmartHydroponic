@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.KontrolPanel">
+
+    <cjh.WaveProgressBarlibrary.WaveProgressBar
+        android:id="@+id/waveProgressBar"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="200dp"
+        app:arc_color="#fff"
+        app:behind_wave_color="#01A1D6"
+        app:canvas_bg="#fff"
+        app:front_wave_color="#9DDBED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="50"
+        app:shape="circle"
+        app:text_size="20sp" />
+
+    <SeekBar
+        android:id="@+id/id_seekbar"
+        android:layout_width="131dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waveProgressBar" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
